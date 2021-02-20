@@ -1,0 +1,26 @@
+html,body{
+    font-family: 'Montserrat' !important;
+}
+.top{
+    background-color: white;
+    width: auto;
+    height: 500px;
+    font-size: large;
+    color: rgb(245, 234, 234);
+    padding-top: 100px;
+}
+.top2{
+    background-color:  blue;
+    width: fit-content;
+    border-radius: 10px;
+    margin: auto;
+    padding: 30px;
+}
+.footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 45px;
+    width: auto;
+    
+}

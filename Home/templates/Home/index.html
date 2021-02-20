@@ -1,0 +1,287 @@
+{% extends 'Home/basic.html' %} 
+{% load static %}
+  <title>{% block tittle %} MumbaiPolice {% endblock %}</title>
+  {% block css %}
+  <style>
+    .col-md-4 {
+      display: inline-block;
+      margin-left: -4px;
+    }
+
+    .img1 {
+      width: 100%;
+    }
+
+    .col-md-4 img {
+      width: 100%;
+      height: auto;
+    }
+
+
+
+    body .carousel-indicators {
+      bottom: 0;
+    }
+
+
+
+    body .no-padding {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
+    .carousel-item img .card {
+      height: 150px;
+    }
+
+    .carousel-item .card {
+      width: 350px !important;
+      height: 350px !important;
+      margin-top: 50px;
+    }
+
+    .card-body {
+      padding: 0rem 1rem !important;
+    }
+
+    .wrapper {
+      height: 12vh;
+      /*This part is important for centering*/
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .typing-demo {
+      width: 22ch;
+      animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 3px solid;
+      font-family: monospace;
+      font-size: 2em;
+    }
+
+    </style>
+    {% endblock %}
+
+
+
+    
+    {% block body %} 
+  {% load static %}
+
+
+
+
+  <!--carousel-->
+  <div id="carouselExampleCaptions" class="carousel carousel-fade" data-bs-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
+      <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
+      <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{% static 'images/police1.jpeg' %}" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h1>Mumbai Police</h1>
+          <p class="slidedeck">
+            Saftey is our priority
+
+          </p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'images/police2.jpeg' %}" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h1>Mumbai Police</h1>
+          <p class="slidedeck">Saftey is our priority</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'images/police3.jpeg' %}" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h1>Mumbai Police</h1>
+          <p class="slidedeck">Saftey is our priority</p>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </a>
+  </div>
+
+  <!--Card-->
+  <div class="card border-primary mb-3" style="width: 27rem;">
+    <img src="{% static 'images/police_card1.jpeg' %}" class="card-img-top img1" alt="...">
+    <a class="card-block stretched-link text-decoration-none" href="../../Home/FIR">
+      <div class="card-body">
+        <h1 class="card-title">Online FIR</h1>
+      </div>
+      <p class="card-text">FIR with no hustle,Report crime from home</p>
+    </a>
+  </div>
+  </div>
+  <div class="card border-primary mb-3" style="width: 27rem;">
+    <a class="card-block stretched-link text-decoration-none" href="index.html">
+      <img src="{% static 'images/announcement.jpeg' %}" class="card-img-top img1" alt="...">
+      <div class="card-body">
+        <h1 class="card-title">Announcements</h1>
+        <p class="card-text">Click to get updated</p>
+      </div>
+    </a>
+  </div>
+  <div class="card card3 border-primary " style="width: 27rem;">
+    <a class="card-block stretched-link text-decoration-none" href="index.html">
+      <img src="{% static 'images/social_media_recruitment.png' %}" class="card-img-top img1" alt="...">
+      <div class="card-body">
+        <h1 class="card-title">Recruitment</h1>
+        <p class="card-text">Join us on our mission to make life safer for over 24 million Mumbaikars.</p>
+      </div>
+    </a>
+  </div>
+
+
+
+  <!-- Modal -->
+
+
+  <!--crousel 2-->
+
+  <div id="carouselExampleCaptions1" class="carousel slide" data-bs-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="0" class="active"></li>
+      <li data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="1"></li>
+      <li data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner container no-padding">
+      <div class="carousel-item active">
+
+        <div class="col-xs-4 col-sm-4 col-md-4">
+          <div class="card" style="width: 27rem;">
+            <img src="{% static 'images/police_card1.jpeg' %}" class="card-img-top img1" alt="...">
+            <div class="card-body">
+              <h1 class="card-title">Online FIR</h1>
+              <p class="card-text">FIR with no hustle,Report crime from home</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xs-4 col-sm-4 col-md-4">
+          <div class="card" style="width: 27rem;">
+            <img src="{% static 'images/police_card1.jpeg' %}" class="card-img-top img1" alt="...">
+            <div class="card-body">
+              <h1 class="card-title">Online FIR</h1>
+              <p class="card-text">FIR with no hustle,Report crime from home</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xs-4 col-sm-4 col-md-4">
+          <div class="card" style="width: 27rem;">
+            <img src="{% static 'images/police_card1.jpeg' %}" class="card-img-top img1" alt="...">
+            <div class="card-body">
+              <h1 class="card-title">Online FIR</h1>
+              <p class="card-text">FIR with no hustle,Report crime from home</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="carousel-item">
+
+        <div class="col-xs-4 col-sm-4 col-md-4">
+          <div class="card" style="width: 27rem;">
+            <img src="{% static 'images/police_card1.jpeg' %}" class="card-img-top img1" alt="...">
+            <div class="card-body">
+              <h1 class="card-title">Online FIR</h1>
+              <p class="card-text">FIR with no hustle,Report crime from home</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xs-4 col-sm-4 col-md-4">
+          <div class="card" style="width: 27rem;">
+            <img src="{% static 'images/police_card1.jpeg' %}" class="card-img-top img1" alt="...">
+            <div class="card-body">
+              <h1 class="card-title">Online FIR</h1>
+              <p class="card-text">FIR with no hustle,Report crime from home</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xs-4 col-sm-4 col-md-4">
+          <div class="card" style="width: 27rem;">
+            <img src="{% static 'images/police_card1.jpeg' %}" class="card-img-top img1" alt="...">
+            <div class="card-body">
+              <h1 class="card-title">Online FIR</h1>
+              <p class="card-text">FIR with no hustle,Report crime from home</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="carousel-item">
+
+        <div class="col-xs-4 col-sm-4 col-md-4">
+          <div class="card" style="width: 27rem;">
+            <img src="{% static 'images/police_card1.jpeg' %}" class="card-img-top img1" alt="...">
+            <div class="card-body">
+              <h1 class="card-title">Online FIR</h1>
+              <p class="card-text">FIR with no hustle,Report crime from home</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xs-4 col-sm-4 col-md-4">
+          <div class="card" style="width: 27rem;">
+            <img src="{% static 'images/police_card1.jpeg' %}" class="card-img-top img1" alt="...">
+            <div class="card-body">
+              <h1 class="card-title">Online FIR</h1>
+              <p class="card-text">FIR with no hustle,Report crime from home</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xs-4 col-sm-4 col-md-4">
+          <div class="card" style="width: 27rem;">
+            <img src="{% static 'images/police_card1.jpeg' %}" class="card-img-top img1" alt="...">
+            <div class="card-body">
+              <h1 class="card-title">Online FIR</h1>
+              <p class="card-text">FIR with no hustle,Report crime from home</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a class="carousel-control-prev" href="#carouselExampleCaptions1" role="button" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleCaptions1" role="button" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </a>
+  </div>
+
+
+
+
+
+
+
+
+
+
+ 
+        {% endblock %}

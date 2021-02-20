@@ -1,0 +1,62 @@
+{% extends 'Home/basic.html' %} 
+{% load static %}
+  <title>{% block tittle %} File FIR {% endblock %}</title>
+
+
+
+  {% block body %}
+      <div class="container text-center hset">
+<h1>Lorem ipsum dolor sit amet consectetur.</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat totam odit, tempora inventore molestiae laborum unde veritatis, voluptates eligendi ad voluptas doloribus aliquid quisquam! Ex optio expedita nesciunt, eaque odio, quod illum vero mollitia soluta possimus laborum cupiditate reprehenderit voluptatibus dolore, esse maiores ipsum sit dignissimos nulla consectetur adipisci dolor facere! Aliquam numquam amet vel quae veniam facere esse blanditiis, maiores consectetur? Quae alias nemo, similique sit repudiandae labore ipsa doloremque eos commodi iure doloribus nulla ullam impedit reiciendis placeat! Dignissimos, tempora voluptatibus eligendi incidunt deleniti cupiditate excepturi, delectus veritatis quisquam architecto provident obcaecati aperiam, sed cum maxime deserunt saepe. Eius quo aliquid aliquam, reiciendis veritatis, nemo hic ex quasi repellat vel ipsa totam provident est itaque numquam aperiam quam tempore aut. Quam possimus sed repudiandae accusamus sapiente, quia explicabo nulla, nesciunt totam nam eius exercitationem voluptas magnam assumenda non! Molestias aperiam quo consequuntur. Voluptas atque voluptate impedit at facilis?</p>
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Launch demo modal
+        </button>
+    </div>
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title " id="exampleModalLabel">File Your FIR</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            
+          <form action="../../Home/FIR/" method="POST">
+            {% csrf_token %}
+              <div class="row g-3 mb-3">
+                  <div class="col">
+                      <label  class="form-label">First Name</label>
+                    <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                  </div>
+                  <div class="col mb-3">
+                      <label  class="form-label">Last Name</label>
+                    <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                  </div>
+                </div>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+              </div>
+              <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Content </label>
+                <textarea class="form-control" name="content" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+              
+              
+              
+            </div>
+            <div class="modal-footer">
+                
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}
+
+ 

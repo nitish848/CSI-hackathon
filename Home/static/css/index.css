@@ -1,0 +1,156 @@
+body,html{
+    font-family: 'Montserrat', sans-serif;
+}
+.carousel-item{
+    height: 500px;
+} 
+.carousel-item img{
+    height: 500px;
+}
+
+.card-img-top{
+    width: fit-content;
+    height: 150px;
+}
+.card-text{
+    text-align: center;
+}
+.card-title{
+    text-align: center;
+}
+
+.card{
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    color:black;
+
+}
+a{
+    color: black;
+}
+a:hover{
+    color: rgb(207, 24, 70);
+}
+
+.border-primary{
+    border-color: #090a0a!important;
+}
+.slidedeck{
+    font-size: 37px;
+}
+.footer{
+    background-color: black;
+    color: blanchedalmond;
+    text-align: center;
+    height: 45px;
+    width: auto;
+   
+}
+.copyright{
+    font-size: xx-large;
+}
+.loginbtn{
+    border-color: blanchedalmond;
+    color: blanchedalmond;
+}
+.loginbtn:hover{
+    color: black;
+    background-color: blanchedalmond;
+}
+@media only screen and (max-width: 485px){
+    .card {
+      width: 300px !important;
+    }
+    .carousel-item img{
+        height: 300px;
+    }
+    .carousel-item{
+        height: 300px;
+    } 
+  }
+.login1{
+    margin-right: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.signup1{
+    padding-left: 13px;
+    padding-right: 13px;
+}
+
+
+
+
+
+.col-md-4 {
+    display: inline-block;
+    margin-left: -4px;
+    }
+    
+    .img1 {
+    width: 100%;
+    }
+    
+    .col-md-4 img {
+    width: 100%;
+    height: auto;
+    }
+    
+    
+    
+    body .carousel-indicators {
+    bottom: 0;
+    }
+    
+    
+    
+    body .no-padding {
+    padding-left: 0;
+    padding-right: 0;
+    }
+    
+    .carousel-item img .card {
+    height: 150px;
+    }
+    
+    .carousel-item .card {
+    width: 350px !important;
+    height: 350px !important;
+    margin-top: 50px;
+    }
+    
+    .card-body {
+    padding: 0rem 1rem !important;
+    }
+    
+    .wrapper {
+    height: 12vh;
+    /*This part is important for centering*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    
+    .typing-demo {
+    width: 22ch;
+    animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2em;
+    }
+    
+    @keyframes typing {
+    from {
+    width: 0
+    }
+    }
+    
+    @keyframes blink {
+    50% {
+    border-color: transparent
+    }
+    }
+     

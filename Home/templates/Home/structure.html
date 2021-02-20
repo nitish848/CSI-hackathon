@@ -1,0 +1,50 @@
+{% extends 'Home/basic.html' %} 
+
+
+
+    <title>{% block tittle %} Organisational Structure {% endblock %}</title>
+
+    {% block css %}
+    
+    {% endblock %}
+    {% block body %} 
+    {% load static %}
+        <!--Popovers-->
+    <div class="pop1 text-center">
+        <button type="button" class="btn btn1 btn-lg btn-dark" data-bs-placement="top" data-bs-toggle="popover" title="Commissioner Of Police"  data-bs-content="Param Bir Singh
+        ">Commissioner Of Police</button>
+        <!--extra-->
+        <div class="pop2">
+        <button type="button" class="btn btn2 btn-danger" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+          Jt.CP(L&O)
+        </button>
+        
+        <button type="button" class="btn btn2 btn-danger" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+          Jt.CP(Admin)
+        </button>
+        
+        <button type="button" class="btn btn2 btn-danger" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+          Jt.CP(Crime)
+        </button>
+        
+        <button type="button" class="btn btn2 btn-danger" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+          Jt.CP(EOW)
+        </button>
+
+        <button type="button" class="btn btn2 btn-danger" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
+          Jt.CP(Traffic)
+        </button>
+      </div>
+    </div>
+    <!--footer-->
+    <div class="footer fixed-bottom">
+      <p class="copyright">&copy; Mumbai police</p> 
+      
+  </div>
+  <script>
+    var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+ return new bootstrap.Popover(popoverTriggerEl)
+})
+</script>
+{% endblock %}
